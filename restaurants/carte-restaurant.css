@@ -10,6 +10,10 @@
        padding:0;
        flex-direction:column;
     }
+    h1{
+       margin-left:20px;
+       font-family:'shrikhand' cursive;
+    }
     .container2{
        display:table;
        width:100%;
@@ -21,6 +25,7 @@
     p{
        border-bottom:solid 3px #99E2D0 ;
        width:40px;
+       margin-left:20px;
 
     }
     button{

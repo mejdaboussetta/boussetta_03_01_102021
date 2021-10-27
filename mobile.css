@@ -26,19 +26,33 @@ html, body{
    height:50px;
    background:#e0e0e0 ;
 }
-.boutton{
+.button1{
    display:flex;
    justify-content:center;
    align-items:center;
-   width:220px;
+   width:300px;
    height:50px;
    color:#ffffff;
    border-radius:30px;
-   background-image: linear-gradient(to right top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da); 
+   background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
    margin:0 auto;
-   position:relative;
+
+}
+svg{
+   width:25px;
+   height:25px;
    cursor:pointer;
-   margin-top:40px;
+   overflow:visible;
+
+}
+.heart-main{
+   position:absolute;
+   left:0;
+   right:0;
+
+}
+.heart-background:hover{
+   background-image:linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 h1{
    position:relative;
@@ -79,14 +93,21 @@ button{
     font-size:16px;
     background-color:#F2F2F2;
 }
+
 button span{
-   color:black;
+   color:#000000;
+   display:flex;
+   height:70px;
+   justify-content:center;
+   align-items:center;
+   margin-right:20px;
 }
-button svg{
-   display:grid;
-   margin:auto 0;
-    width:20px;
-    height:20px; 
+button span svg{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:20px;
+   width:20px;
 }
 button span:last-child{
    display:inline-block;
@@ -114,7 +135,7 @@ button:hover svg path{
 
 }
 h2{
-   margin-left:20px;
+   margin-left:10px;
    margin-bottom:20px;
    padding-top:40px;
    font-weight:bold;
@@ -137,6 +158,7 @@ h2{
 .margetext{
    margin-left:20px;
 }
+
 .boite{
    width:95%;
    height:260px;
@@ -150,21 +172,21 @@ h2{
    position:relative;
 }
 .nouveau{
-   border:solid 1px #99E2D0;
+   border:solid 1px transparent;
+   border-radius:5px;
    background-color: #9fcfc3;
-   color:#43a047  ;
+   color:#1b5e20   ;
    font-weight: bold;
-   font-size:12px;
+   font-size:16px;
    position:absolute;
-}
-.heart{
-    display:inline-block;
-    margin:auto 0;
-    width:18px;
-    height:18px;
-    color:transparent;
-    position:absolute;
-    background-image: linear-gradient(to right top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da); 
+   width:100px;
+   height:40px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   top:5%;
+   right:15px;
+
 }
 /*footer*/
 footer{
@@ -180,6 +202,14 @@ footer{
    width:18px;
    height:18px;
 }
+footer span:first-child{
+   font-family: 'shrikhand' cursive;
+}
+footer a{
+   color:#ffffff;
+   text-decoration:none;
 }
 
 
+
+}
