@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <div><img src="images/ohmyfood.png" class="logo" alt="logo-ohmyfood">
-        </div>
+        <div><img src="images/ohmyfood.png" class="logo" alt="logo-ohmyfood"></div>
+        
     </header>
     <main>
         <div class="barrederecherche">
@@ -55,56 +55,125 @@
             
             <div class="carte">
                 <h2>Restaurants</h2>
-            <a href="restaurants/la-palette-du-gout.html" class="boite"><img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="image" alt="menilmontant">
-                <div class="margetext">
-                <span><strong>La palette du goût</strong></span></br>
-                <span>Ménilmontant</span>
+            <a href="restaurants/la-palette-du-gout.html" class="boite">
+                <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="image" alt="menilmontant">
+                <span class="margetext"><strong>La palette du goût</strong></span></br>
+                <span class="margetext">Ménilmontant</span>
                 <span class="nouveau">Nouveau</span>
-                <span>
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="heart-main svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-                </span>
-            </div>
+                <span class="restaurants__figcaption__like">
+                    <div class="restaurants__figcaption__like__emptyheart">
+                        <!-- svg coeur vide -->
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-main" class="heart-main svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+            <!--  -->
+                 </div>
+                    </span>
+        <span class="restaurants__figcaption__like__fullheart">
+            <!-- svg coeur dégradé -->
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-background" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <defs>
+                    <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#9356dc" />
+                      <stop offset="0.25" stop-color="#a85adc" />
+                      <stop offset="0.5" stop-color="#cf64dc" />
+                      <stop offset="0.75" stop-color="#f172da" />
+                      <stop offset="1" stop-color="#ff79da" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                </svg>
+                <!--  -->
+            </span>
             </a>
             <a href="restaurants/la-note-enchantée.html" class="boite">
                 <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" class="image" alt="charonne">
-                <div class="margetext">
-                 <span><strong>La note enchantée</strong></span></br>
-                 <span>Charonne</span>
+                <span class="margetext"><strong>La note enchantée</strong></span></br>
+                 <span class="margetext">Charonne</span>
                  <span class="nouveau">Nouveau</span>
-                 <span>
-                 <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="heart-main svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-                 <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-                </span>
-                </div>
+                 <span class="restaurants__figcaption__like">
+                    <div class="restaurants__figcaption__like__emptyheart">
+                        <!-- svg coeur vide -->
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-main" class="heart-main svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+            <!--  -->
+                 </div>
+                    </span>
+        <span class="restaurants__figcaption__like__fullheart">
+            <!-- svg coeur dégradé -->
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-background" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <defs>
+                    <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#9356dc" />
+                      <stop offset="0.25" stop-color="#a85adc" />
+                      <stop offset="0.5" stop-color="#cf64dc" />
+                      <stop offset="0.75" stop-color="#f172da" />
+                      <stop offset="1" stop-color="#ff79da" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                </svg>
+                <!--  -->
+            </span>
                 </a>
             <a href="restaurants/a-la-francaise.html" class="boite">
                 <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="image" alt="citérouge">
-                <div class="margetext">
-                <span><strong>A la française</strong></span></br>
-                <span>Cité rouge</span>
-                <span>
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="heart-main svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                <span class="margetext"><strong>A la française</strong></span></br>
+                <span class="margetext">Cité rouge</span>
+                <span class="restaurants__figcaption__like">
+                    <div class="restaurants__figcaption__like__emptyheart">
+                        <!-- svg coeur vide -->
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-main" class="heart-main svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+            <!--  -->
+                 </div>
+                    </span>
+        <span class="restaurants__figcaption__like__fullheart">
+            <!-- svg coeur dégradé -->
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-background" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <defs>
+                    <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" stop-color="#9356dc" />
+                      <stop offset="0.25" stop-color="#a85adc" />
+                      <stop offset="0.5" stop-color="#cf64dc" />
+                      <stop offset="0.75" stop-color="#f172da" />
+                      <stop offset="1" stop-color="#ff79da" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                </svg>
+                <!--  -->
             </span>
-            </div>
             </a>
             <a href="restaurants/le-delice-des-sens.html" class="boite">
                 <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="image" alt="Folie-mericourt">
-                <div class="margetext">
-                <span><strong>Le délice des sens</span></strong></span></br>
-                <span>Folie-méricourt</span>
-                <span>
+                <span class="margetext"><strong>Le délice des sens</span></strong></span></br>
+                <span class="margetext">Folie-méricourt</span>
+                    <span class="restaurants__figcaption__like">
+                        <div class="restaurants__figcaption__like__emptyheart">
+                            <!-- svg coeur vide -->
                 <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-main" class="heart-main svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-background" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-            </span>
-            </div>
+                <!--  -->
+                     </div>
+                        </span>
+            <span class="restaurants__figcaption__like__fullheart">
+                <!-- svg coeur dégradé -->
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart-background" class="heart-background svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <defs>
+                        <linearGradient id="gradient-fill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                          <stop offset="0" stop-color="#9356dc" />
+                          <stop offset="0.25" stop-color="#a85adc" />
+                          <stop offset="0.5" stop-color="#cf64dc" />
+                          <stop offset="0.75" stop-color="#f172da" />
+                          <stop offset="1" stop-color="#ff79da" />
+                        </linearGradient>
+                      </defs>
+                      <path fill="url(#gradient-fill) #9356dc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                    </svg>
+                    <!--  -->
+                </span>
             </a>
             </div>
         </section>
         <footer>
             <div class="bas-page">
-            <span>Ohmyfood</span>
+            <span class="font-logo">Ohmyfood</span>
             <div>
                 <span><svg class="icone" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="utensils" class="svg-inline--fa fa-utensils fa-w-13" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512"><path fill="currentColor" d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"></path></svg></span>
                 <span>Proposer un restaurant</span>

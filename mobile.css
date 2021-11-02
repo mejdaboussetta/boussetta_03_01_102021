@@ -4,19 +4,18 @@
 }
 
 html, body{
-   font-family: 'Roboto', sans-serif;
+   font-family: "Roboto", sans-serif;
    margin:0;
    padding:0;
    flex-direction:column;
 }
 .logo{
    display:flex;
+   justify-content:center;
    margin:0 auto;
-   width:150px;
    height:40px;
-   font-family: "shrikhand" cursive;
-   margin-top:20px;
-   margin-bottom:20px;
+   margin-top:10px;
+   margin-bottom:10px;
 }
 .barrederecherche{
    display: flex;
@@ -57,7 +56,7 @@ svg{
 h1{
    position:relative;
    display:flex;
-   justify-content: space-around;
+   justify-content:space-around;
    align-items: center;
 }
 .iconemap{
@@ -90,6 +89,7 @@ button{
     height:70px;
     position:relative;
     font-weight:bold;
+    font-family:"Roboto", sans-serif;
     font-size:16px;
     background-color:#F2F2F2;
 }
@@ -162,7 +162,7 @@ h2{
 .boite{
    width:95%;
    height:260px;
-   background-color: #ffffff;
+   background-color:#ffffff;
    margin:0 auto;
    margin-bottom:20px;
    border-radius:15px 15px;
@@ -188,10 +188,42 @@ h2{
    right:15px;
 
 }
+/* heart checkboxes */
+
+.restaurantmenu__presentation__title__like,
+.restaurants__figcaption__like {
+  position: relative;
+  width: 2rem;
+  margin: 0.3rem 0.5rem 0 0;
+  cursor: pointer;
+}
+
+.restaurants__figcaption__like__emptyheart {
+  width: 1.5rem;
+  position: absolute;
+}
+
+.restaurants__figcaption__like__fullheart {
+  width: 1.5rem;
+  position: absolute;
+  opacity: 0;
+}
+
+.restaurants__figcaption__like__fullheart:hover {
+  opacity: 1;
+  transition: 400ms ease-in-out;
+}
+
+
 /*footer*/
 footer{
-   height:150px;
+   height:180px;
    background-color:#424242;
+}  
+.font-logo{
+   display:flex;
+   font-family: "Shrikhand", cursive;
+   margin-bottom:20px;
 }
 .bas-page{
    padding-left:20px;
@@ -202,14 +234,12 @@ footer{
    width:18px;
    height:18px;
 }
-footer span:first-child{
-   font-family: 'shrikhand' cursive;
-}
 footer a{
    color:#ffffff;
    text-decoration:none;
 }
-
-
-
 }
+
+
+
+
