@@ -1,0 +1,13 @@
+@media all and (min-width: 1025px){
+    *{
+       box-sizing: border-box;
+    }
+    
+    html, body{
+       font-family:"Roboto" ,sans-serif;
+       font-size:18px;
+       margin:0;
+       padding:0;
+       background-color: yellow;
+    }
+}
