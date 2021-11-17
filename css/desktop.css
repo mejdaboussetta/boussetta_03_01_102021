@@ -50,6 +50,23 @@
    text-align:center;
    background-color: #F2F2F2;
 }
+.boutton1{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:300px;
+   height:50px;
+   color:#ffffff;
+   border-radius:30px;
+   background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+   margin:0 auto;
+   font-size:18px;
+   font-weight:lighter;
+
+}
+a{
+   text-decoration:none;
+}
 button{
    display:flex;
    justify-content:center;
@@ -66,6 +83,7 @@ button{
     font-family:"Roboto", sans-serif;
     font-size:16px;
     background-color:#F2F2F2;
+    box-shadow:5px 5px 5px 5px grey;
 }
 button span{
    color:#000000;
@@ -162,29 +180,31 @@ h2{
 }
 .restaurantmenu__presentation__title__like,
 .restaurants__figcaption__like {
-  position: relative;
+  position: absolute;
   width: 2rem;
   margin: 0.3rem 0.5rem 0 0;
   cursor: pointer;
-  margin-top:-35px;
-  margin-left:350px;
-
+  display:flex;
+  margin-left:830px;
+  
 }
 
 .restaurants__figcaption__like__emptyheart {
   width: 1.5rem;
   position: absolute;
+  margin-top:-60px;
 }
 
 .restaurants__figcaption__like__fullheart {
   width: 1.5rem;
   position: absolute;
   opacity: 0;
+  margin-top:-60px;
 }
 
 .restaurants__figcaption__like__fullheart:hover {
   opacity: 1;
-  transition: 400ms ease-in-out;
+  transition: 1s ease-in-out;
 }
 /*footer*/
 footer{

@@ -8,6 +8,207 @@
        font-size:18px;
        margin:0;
        padding:0;
-       background-color: yellow;
     }
+    .logo1{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin:0 auto;
+      height:40px;
+      margin-top:20px;
+      margin-bottom:20px;
+       }
+       #toLeft {
+        position:absolute;
+        top:20px;
+        left:20px;
+        cursor:pointer;
+        font-size:25px;
+        line-height:45px;
+        color:#000000;
+        text-align:center;
+       }
+       .img1{
+        width:50%;
+        height:400px;
+        object-fit: cover;
+        object-position:bottom;
+        border-radius:50px 50px 0 0;
+        margin-left:350px;
+     }
+     .container1{
+        width:50%;
+        height:1300px;
+        background-color:#F2F2F2;
+        border-radius:50px 50px 0 0;
+        transform:translateY(-45px);
+        margin-left:350px;  }
+     h1{
+        padding-top:30px;
+        margin-top:0px;
+        margin-left:20px;
+        font-family:"shrikhand", cursive;
+        display:flex;
+     }
+     h2{
+      border-bottom: solid 3px #99E2D0;
+      width:45px;
+      margin-left:20px;
+      display:flex;
+      padding-top:40px;
+      font-weight:lighter;
+      font-size:large;  
+      font-size:18px;
+     }
+     /* heart checkboxes */
+
+.restaurantmenu__presentation__title__like,
+.restaurants__figcaption__like {
+  position: relative;
+  display:flex;
+  width: 2rem;
+  margin: 0.3rem 0.5rem 0 0;
+  cursor: pointer;
+  margin-top:-55px;
+  margin-left:600px;
+}
+
+.restaurants__figcaption__like__emptyheart {
+  width: 1.5rem;
+  position: absolute;
+}
+
+.restaurants__figcaption__like__fullheart {
+  width: 1.5rem;
+  position: absolute;
+  opacity: 0;
+}
+
+.restaurants__figcaption__like__fullheart:hover {
+  opacity: 1;
+  transition: 1s ease-in-out;
+  
+}
+       
+       .card{
+        box-sizing:border-box;
+        background:#ffffff;
+        padding:15px;
+        border-radius:20px;
+        margin:0 auto;
+        height:80px;
+        width:95%;
+        position:relative;
+        margin-bottom: 10px;
+     }
+     
+     .card div{
+     
+      position:absolute;
+      top:0;
+      right:0;
+      width:0px;
+      height:80px;
+      border-radius:0 20px 20px 0;
+      background:#009688;
+      transition:width ease 0.5s;
+     }
+     
+     .card:hover div{
+     
+      width:80px;
+     
+     }
+     h3{
+        font-size:18px;
+        font-weight:bolder;  
+        margin-top:-3px;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space: nowrap;
+        transition:width ease 0.7s;
+        }
+        
+        .card:hover h3{
+        
+         width:calc(100% - 100px);
+        
+        }
+     .card p{
+        font-size:18px;
+      margin-top:-2px;
+      text-overflow:ellipsis;
+      overflow:hidden;
+      white-space: nowrap;
+      transition:width ease 0.7s;
+     }
+     
+     .card:hover p{
+     
+      width:calc(100% - 70px);
+     
+     }
+     .card svg{
+     width:40px;
+     height:40px;
+     margin-top:20px;
+     margin-left:20px;
+     display:none;
+     }
+     .card:hover svg{
+     display:block;
+     }
+     .card span{
+        display:flex;
+        justify-content:flex-end;
+        width:100%;
+        margin-top:-40px;  
+        transition:width ease 5s;
+        margin-right:0;
+     }
+     .card:hover span{
+        width:calc(500px - 100px);
+     }
+     .boutton{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:220px;
+        height:50px;
+        color:#ffffff;
+        border-radius:30px;
+        background-image: linear-gradient(to right top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da); 
+        margin:0 auto;
+        position:relative;
+        cursor:pointer;
+        margin-top:40px;
+        margin-bottom:80px;
+        }
+        /*footer*/
+        footer{
+           height:200px;
+           background-color:#424242;
+        
+        }
+        .font-logo{
+           display:flex;
+           font-family: "Shrikhand", cursive;
+           margin-bottom:20px;
+        }
+        .bas-page{
+           padding-left:40px;
+           color:#ffffff;
+           padding-top:20px;
+        }
+        
+        .icone{
+           width:18px;
+           height:18px;
+        }
+        footer a{
+           color:#ffffff;
+           text-decoration:none;
+        } 
+        
+          
 }

@@ -35,8 +35,56 @@
        margin-top:0px;
        margin-left:20px;
        font-family:"shrikhand", cursive;
+       font-size:24px;
     }
-    
+    h2{
+      border-bottom: solid 3px #99E2D0;
+      width:40px;
+      margin-left:20px;
+      padding-top:40px;
+      font-weight:lighter;
+      font-size:large;  
+     }
+      .vignets{
+         animation: fadein 5s;/*Firefox*/
+         -moz-animation:fadein 5s;
+         -webkit-animation: fadein 5s;/*Safari et Chrome */
+         -o-animation:fadein 5s;/*Opera*/
+       }
+       @keyframes fadein{
+         from{
+           opacity:0;
+         }
+         to{
+           opacity:1;
+         }
+       }
+       @-moz-keyframes fadein{ /* sur Firefox */
+         from{
+           opacity:0;
+         }
+         to{
+           opacity:1;
+         }
+       }
+       @-webkit-keyframes fadein{ /*sur Safari et chrome*/
+         from{
+           opacity:0;
+         }
+         to{
+           opacity:1;
+         }
+       }
+       @-o-keyframes fadein{ /*sur Opera*/
+         from{
+           opacity:O;
+         
+         }
+         to{
+           opacity:1;
+         }
+       }
+       
 /* heart checkboxes */
 
 .restaurantmenu__presentation__title__like,
@@ -44,8 +92,8 @@
   position: relative;
   width: 2rem;
   margin: 0.3rem 0.5rem 0 0;
-  cursor: pointer;
   margin-left:300px;
+  margin-top:-50px;
 }
 
 .restaurants__figcaption__like__emptyheart {
@@ -61,45 +109,10 @@
 
 .restaurants__figcaption__like__fullheart:hover {
   opacity: 1;
-  transition: 400ms ease-in-out;
-}
-h2{
- border-bottom: solid 3px #99E2D0;
- width:40px;
- margin-left:20px;
- margin-top:40px;
- display:flex;
- font-weight:lighter;
- font-size:large;  
-}
-.progress-bar{
-   animation:progess-bar 1000ms 150ms;
-
-}
-@keyframes progress-bar {
-   0% {
-      transform:scaleX(0);
-      opacity: .1;
-   }
-   17%{
-      transform:scaleX(.18);
-   }
-   24%{
-      transform:scaleX(.4);
-   }
-   46%{
-      transform:scaleX(.81)
-   }
-   85%,100%{
-      opacity:1;
-   }
-   100%{
-      transform:scaleX(1);
-   }
+  transition: 1s ease-in-out;
 }
 .card{
    box-sizing:border-box;
-   width:300px;
    background:#ffffff;
    padding:15px;
    border-radius:20px;
@@ -109,10 +122,8 @@ h2{
    position:relative;
    margin-bottom: 10px;
 }
-
 .card div{
-
- position:absolute;
+position:absolute;
  top:0;
  right:0;
  width:0px;
@@ -120,6 +131,7 @@ h2{
  border-radius:0 20px 20px 0;
  background:#009688;
  transition:width ease 0.5s;
+ text-align:center;
 }
 
 .card:hover div{
@@ -127,8 +139,22 @@ h2{
  width:80px;
 
 }
-
+h3{
+   font-size:16px;  
+   margin-top:-3px;
+   text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    transition:width ease 0.7s;
+   }
+   
+   .card:hover h3{
+   
+    width:calc(100% - 100px);
+   
+   }
 .card p{
+font-size:14px;
  margin-top:-2px;
  text-overflow:ellipsis;
  overflow:hidden;
@@ -138,29 +164,34 @@ h2{
 
 .card:hover p{
 
- width:calc(100% - 70px);
+ width:calc(100% - 100px);
 
 }
 .card svg{
-width:40px;
-height:40px;
-margin-top:20px;
-margin-left:20px;
-display:none;
-transform:rotate(180deg);
-transition:transform 200ms ease-in-out;
+width:0px;
+height:28px;
+
 }
 .card:hover svg{
-display:block;
-transform:rotate(-360deg);
+   width:28px;
+   transform:rotate(360deg);
+   transition:transform ease 1s;
+   display:inline-block;
+   /* margin:0 auto !important; */
+   margin-top:27px;
 }
 .card span{
    display:flex;
-   width:40px;
-   margin-left:280px;
-   margin-top:-40px;
-   font-weight:bold;
+   width:100%;
+   justify-content:flex-end;
+   align-items:center;
+   margin-top:-32px;  
+   transition:width ease 0.5s;
+   font-size:14px;
 
+}
+.card:hover span{
+   width:calc(400px - 140px);
 }
 .boutton{
 display:flex;
@@ -170,7 +201,7 @@ width:220px;
 height:50px;
 color:#ffffff;
 border-radius:30px;
-background-color:#9356DC; 
+background-image: linear-gradient(to right top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 margin:0 auto;
 position:relative;
 cursor:pointer;
@@ -211,5 +242,4 @@ footer a{
    color:#000000;
    text-align:center;
   } 
-   
- }
+}
