@@ -9,6 +9,7 @@ html, body{
    padding:0;
    flex-direction:column;
 }
+
 .logo{
    display:flex;
    justify-content:center;
