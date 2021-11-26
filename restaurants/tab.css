@@ -1,0 +1,113 @@
+@media all and (min-width: 768px){
+    /* heart checkboxes */
+
+.restaurantmenu__presentation__title__like,
+.restaurants__figcaption__like {
+  position: relative;
+  width: 2rem;
+  margin: 0.3rem 0.5rem 0 0;
+  margin-left:700px;
+  margin-top:-50px;
+}
+
+.restaurants__figcaption__like__emptyheart {
+  width: 1.5rem;
+  position: absolute;
+}
+.restaurant__figcaption__like__emptyheart:hover{
+  opacity:0;
+}
+.restaurants__figcaption__like__fullheart {
+  width: 1.5rem;
+  position: absolute;
+  opacity: 0;
+}
+
+.restaurants__figcaption__like__fullheart:hover {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+/*checkboxe et apparition du prix*/
+.card{
+   box-sizing:border-box;
+   background:#ffffff;
+   padding:15px;
+   border-radius:20px;
+   margin:0 auto;
+   height:80px;
+   width:95%;
+   position:relative;
+   margin-bottom: 10px;
+}
+.card div{
+position:absolute;
+ top:0;
+ right:0;
+ width:0px;
+ height:80px;
+ border-radius:0 20px 20px 0;
+ background:#009688;
+ transition:width ease 0.5s;
+ text-align:center;
+}
+
+.card:hover div{
+
+ width:80px;
+
+}
+h3{
+    font-size:20px;  
+    margin-top:-3px;
+    text-overflow:ellipsis;
+     overflow:hidden;
+     white-space: nowrap;
+     transition:width ease 0.7s;
+    }
+    
+ .card:hover h3{
+    
+   width:calc(100% - 100px);
+    
+    }
+ .card p{
+ font-size:20px;
+  margin-top:-8px;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space: nowrap;
+  transition:width ease 0.7s;
+ }
+ 
+ .card:hover p{
+ 
+  width:calc(100% - 100px);
+ 
+ }
+ .card svg{
+ width:0px;
+ height:28px;
+ 
+ }
+ .card:hover svg{
+    width:28px;
+    transform:rotate(360deg);
+    transition:transform ease 1s;
+    display:inline-block;
+    /* margin:0 auto !important; */
+    margin-top:27px;
+ }
+ .card span{
+    display:flex;
+    width:100%;
+    justify-content:flex-end;
+    align-items:center;
+    margin-top:-45px;  
+    transition:width ease 0.5s;
+    font-size:20px;
+ 
+ }
+ .card:hover span{
+    width:calc(800px - 180px);
+ }
+}

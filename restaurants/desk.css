@@ -60,6 +60,23 @@
       font-size:large;  
       font-size:18px;
      }
+     .vignets{
+      animation-name:slideIn;
+      animation-duration:2s;
+      animation-timing-function:linear;
+     
+   }
+      @keyframes slideIn{
+        from{
+          transform:translate3d(0, 50px, 0);
+          opacity:0;
+        }
+        to{
+         transform:translate3d(0, 0, 0);
+          opacity:1;
+        }
+      }
+      
      /* heart checkboxes */
 
 .restaurantmenu__presentation__title__like,
@@ -89,7 +106,7 @@
   transition: 1s ease-in-out;
   
 }
-       
+ /*checkboxe et apparition du prix*/      
        .card{
         box-sizing:border-box;
         background:#ffffff;
@@ -149,25 +166,28 @@
      
      }
      .card svg{
-     width:40px;
-     height:40px;
-     margin-top:20px;
-     margin-left:20px;
-     display:none;
-     }
-     .card:hover svg{
-     display:block;
-     }
+      width:0px;
+      height:28px;
+      
+      }
+      .card:hover svg{
+         width:28px;
+         transform:rotate(360deg);
+         transition:transform ease 1s;
+         display:inline-block;
+         margin-top:27px;
+         margin-left:27px;
+      }
      .card span{
         display:flex;
         justify-content:flex-end;
         width:100%;
         margin-top:-40px;  
-        transition:width ease 5s;
+        transition:width ease 1s;
         margin-right:0;
      }
      .card:hover span{
-        width:calc(500px - 100px);
+        width:calc(630px - 100px);
      }
      .boutton{
         display:flex;
@@ -183,6 +203,13 @@
         cursor:pointer;
         margin-top:40px;
         margin-bottom:80px;
+        filter:brightness(90%);
+        transition:filter 0.7s ease, box-shadow 0.7s ease;
+       }
+   .boutton:hover{
+
+     filter:brightness(100%);
+     box-shadow:2px 2px 5px 9px #e0e0e0;
         }
         /*footer*/
         footer{
