@@ -9,6 +9,41 @@ html, body{
    padding:0;
    flex-direction:column;
 }
+.loader{
+   position:absolute;
+   top:0;
+   bottom:0;
+   right:0;
+   left:0;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+.laoding-spinner{
+     width:50px;
+     height:50px;
+     border-radius:50px;
+     border:solid 6px #9356DC;
+}
+.loading-spinner:after{
+   content:"";
+   top:-6px;
+   left:-6px;
+   right:-6px;
+   bottom:-6px;
+   border:solid 6px transparent;
+   border-radius:50px;
+   border-top-color: #ff79da;
+   animation:spin 1s linear infinite;
+}
+@keyframes spin {
+   0%{
+      transform:rotate(0deg);
+   }
+   100%{
+      transform:rotate(360deg);
+   }
+}
 .logo{
    display:flex;
    justify-content:center;
@@ -39,10 +74,8 @@ html, body{
    font-weight:lighter;
    filter:brightness(90%);
    transition:filter 0.7s ease, box-shadow 0.7s ease;
-
 }
-.button1:hover{
-
+.button-explorer:hover{
      filter:brightness(100%);
      box-shadow:2px 2px 5px 9px #e2e2e2;
 }
@@ -85,6 +118,10 @@ input{
    padding:30px;
    text-align:center;
    background-color: #F2F2F2;
+}
+#bloc-bouttons-fonctionnement h3{
+   margin-left:10px;
+   font-size:1.5rem;
 }
 button{
    display:flex;
@@ -151,10 +188,11 @@ h2{
    margin-left:10px;
    margin-bottom:20px;
    padding-top:40px;
-   font-weight:bold;
+   font-size:1.5rem;
 }
 .carte{
    width:100%;
+   height:1230px;
    background-color:#F2F2F2;
    position:relative;
 }
@@ -168,7 +206,7 @@ h2{
 
 }
 .boite{
-   width:100%;
+   width:95%;
    height:260px;
    margin:0 auto;
    background-color:#ffffff;
@@ -214,11 +252,10 @@ position: absolute;
 width: 2rem;
 margin: 0.3rem 0.5rem 0 0;
 cursor: pointer;
-margin-top:-35px;
+margin-top:-10px;
 margin-left:300px;
 
 }
-
 .restaurants__figcaption__like__emptyheart {
 width: 1.5rem;
 position: absolute;

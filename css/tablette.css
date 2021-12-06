@@ -1,110 +1,60 @@
-@media all and (max-width: 768px){
-    .carte{
-        width:100%;
-        background-color:#F2F2F2;
-        position:relative;
-     }
-     .image{
-        width:100%;
-        height:300px;
-        object-fit:cover;
-        object-position:left;
-        border-radius:15px  15px 0 0;
-        margin-bottom:10px;
-     
-     }
-     .boite{
-        width:100%;
-        height:360px;
-        margin:0 auto;
-        background-color:#ffffff;
+@media all and (min-width: 768px){
+    h2{
+        margin-left:300px;
         margin-bottom:20px;
-        border-radius:15px 15px;
-        text-decoration:none;
-        display:block !important;
-        color:#000000;
-        position:relative;
+        padding-top:40px;
+        font-weight:bold;
      }
-     .margetext{
-           display:flex;
-           justify-content:flex-start;
-           align-items:center;
-           width:340px;
-           margin-left:20px;
-     }
-     
-     
-     .nouveau{
-        border:solid 1px transparent;
-        border-radius:5px;
-        background-color: #9fcfc3;
-        color:#1b5e20   ;
-        font-weight: bold;
-        font-size:16px;
-        position:absolute;
-        width:100px;
-        height:40px;
+    button{
         display:flex;
         justify-content:center;
         align-items:center;
-        top:5%;
-        right:15px;
-     
+         border:none;
+         border-radius:20px;
+         width:330px;
+         margin:0 auto;
+         margin-top:20px;
+         margin-left:220px;
+         cursor:pointer;
+         height:70px;
+         position:relative;
+         font-weight:bold;
+         font-family:"Roboto", sans-serif;
+         font-size:16px;
+         background-color:#F2F2F2;
+         
      }
      /* heart checkboxes */
-     
-     .restaurantmenu__presentation__title__like,
-     .restaurants__figcaption__like {
-       position: absolute;
-       width: 2rem;
-       margin: 0.3rem 0.5rem 0 0;
-       cursor: pointer;
-       margin-top:-35px;
-       margin-left:300px;
-     
-     }
-     
-     .restaurants__figcaption__like__emptyheart {
-       width: 1.5rem;
-       position: absolute;
-       margin-top:-20px;
-     }
-     .restaurant__figcaption__like__emptyheart:hover{
-        opacity:0;
-      }
-     
-     .restaurants__figcaption__like__fullheart {
-       width: 1.5rem;
-       position: absolute;
-       opacity: 0;
-       margin-top:-20px;
-     }
-     
-     .restaurants__figcaption__like__fullheart:hover {
-       opacity: 1;
-       transition: 1s ease-in-out;
-     } 
-     /*footer*/
-footer{
-    height:180px;
-    background-color:#424242;
- }  
- .font-logo{
-    display:flex;
-    font-family: "Shrikhand", cursive;
-    margin-bottom:20px;
- }
- .bas-page{
-    padding-left:20px;
-    color:#ffffff;
-    padding-top:20px;
- }
- .icone{
-    width:18px;
-    height:18px;
- }
- footer a{
-    color:#ffffff;
-    text-decoration:none;
- }
+
+.restaurantmenu__presentation__title__like,
+.restaurants__figcaption__like {
+position: absolute;
+width: 2rem;
+margin: 0.3rem 0.5rem 0 0;
+cursor: pointer;
+margin-top:-35px;
+margin-left:700px;
+
 }
+
+.restaurants__figcaption__like__emptyheart {
+width: 1.5rem;
+position: absolute;
+margin-top:-20px;
+}
+.restaurant__figcaption__like__emptyheart:hover{
+opacity:0;
+}
+
+.restaurants__figcaption__like__fullheart {
+width: 1.5rem;
+position: absolute;
+opacity: 0;
+margin-top:-20px;
+}
+
+.restaurants__figcaption__like__fullheart:hover {
+opacity: 1;
+transition: 1s ease-in-out;
+} 
+    }

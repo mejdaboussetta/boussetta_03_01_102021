@@ -191,10 +191,10 @@ filter:brightness(90%);
 transition:filter 0.7s ease, box-shadow 0.7s ease;
 
 }
-.button-explorer:hover{
+.boutton:hover{
 
-     filter:brightness(100%);
-     box-shadow:2px 2px 5px 9px #e0e0e0;
+filter:brightness(100%);
+box-shadow:2px 2px 5px 9px #e0e0e0;
    
 }
 /*footer*/
