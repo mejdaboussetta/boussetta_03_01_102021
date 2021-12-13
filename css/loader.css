@@ -1,0 +1,45 @@
+#loader{
+    animation-duration:3s;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:9999;
+    background:rgba(255,255,255,0.8);
+    visibility:hidden;
+    animation-fill-mode:none;
+    animation-name:opacity;
+
+ }
+ @keyframes opacity{
+    0%{
+       visibility:visible;
+     
+    }
+    100%{
+       visibility:hidden;
+    }
+ }
+ .loading-spinner{
+    border:10px solid #eeeeee;
+    border-top:10px solid #9356DC;
+    border-bottom:10px solid #FF79DA;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    margin-top:calc( 50vh - 50px);
+    animation-duration:3s;
+    animation-fill-mode: ease;
+    animation-name:spin;
+ }
+   
+ @keyframes spin{
+    0%{
+       transform:rotate(0deg);
+    }
+    100%{
+       transform:rotate(360deg);
+    }
+}

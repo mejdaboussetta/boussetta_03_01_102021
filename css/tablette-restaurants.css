@@ -1,4 +1,4 @@
-@media all and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
     /* heart checkboxes */
 
 .restaurantmenu__presentation__title__like,

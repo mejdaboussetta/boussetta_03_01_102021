@@ -9,48 +9,6 @@
         padding:0;
         /* flex-direction:column; */
      }
-     #loader{
-        animation-duration:5s;
-        background-color:red;
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        z-index:9999;
-        animation-fill-mode:none;
-        animation-name:opacity;
-        display:none !important;
-
-     }
-     @keyframes opacity{
-        0%{
-           opacity:1;
-         
-        }
-        100%{
-           opacity:0;
-        }
-     }
-     .loading-spinner{
-        border:10px solid #ffffff;
-        border-top:10px solid #9356DC;
-        border-bottom:10px solid #FF79DA;
-        border-radius:50%;
-        width:100px;
-        height:100px;
-        margin:auto;
-        animation:spin 5s linear infinite;
-     }
-       
-     @keyframes spin{
-        0%{
-           transform:rotate(0deg);
-        }
-        100%{
-           transform:rotate(360deg);
-        }
-     }
      .logo{
       display:flex;
       justify-content:center;
