@@ -22,7 +22,7 @@
     }
  }
  .loading-spinner{
-    border:10px solid #eeeeee;
+    border:10px solid transparent;
     border-top:10px solid #9356DC;
     border-bottom:10px solid #FF79DA;
     border-radius:50%;
