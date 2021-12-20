@@ -40,7 +40,7 @@ html, body{
    font-size:20px;
    font-weight:lighter;
    filter:brightness(90%);
-   transition:filter 0.7s ease, box-shadow 0.7s ease;
+   
 }
 .button-explorer:hover{
      filter:brightness(100%);
@@ -215,7 +215,7 @@ right:15px;
 
 .restaurantmenu__presentation__title__like,
 .restaurants__figcaption__like {
-position: absolute;
+position: relative;
 width: 2rem;
 margin: 0.3rem 0.5rem 0 0;
 cursor: pointer;
@@ -234,7 +234,7 @@ opacity:0;
 
 .restaurants__figcaption__like__fullheart {
 width: 1.5rem;
-position: absolute;
+position:absolute;
 opacity: 0;
 margin-top:-20px;
 }
