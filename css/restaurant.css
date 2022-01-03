@@ -171,7 +171,7 @@ height:28px;
 
 }
 .card:hover span{
-   width:calc(395px - 140px);
+   width:calc(395px - 135px);
 }
 .boutton{
 display:flex;
